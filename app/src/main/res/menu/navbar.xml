@@ -8,11 +8,13 @@
         android:icon="@drawable/ic_nav_map"
         tools:ignore="MenuTitle" />
     <item
-        android:icon="@drawable/ic_baseline_favorite_24"
+        android:icon="@drawable/ic_matches"
         tools:ignore="MenuTitle" />
     <item
         android:icon="@drawable/ic_nav_messages"
         tools:ignore="MenuTitle" />
     <item
         android:icon="@drawable/ic_nav_user"
-        tools:ignore="MenuTitle" /></menu>
+        tools:ignore="MenuTitle" />
+
+</menu>
