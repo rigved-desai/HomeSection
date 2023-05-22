@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_pink">#FF4D67</color>
     <color name = "pink">#FD788C</color>
+    <color name = "grey">#24242C</color>
 </resources>
