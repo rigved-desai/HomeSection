@@ -1,7 +1,25 @@
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="?attr/colorOnSecondary" /> <!-- Set the background color -->
-    <corners android:radius="50dp" /> <!-- Set the corner radius -->
-    <stroke
-        android:width="3dp"
-    android:color="?attr/colorPrimary" /> <!-- Set the border color -->
-</shape>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <solid android:color="?attr/colorOnSecondary" /> &lt;!&ndash; Set the background color &ndash;&gt;-->
+<!--    <corners android:radius="50dp" /> &lt;!&ndash; Set the corner radius &ndash;&gt;-->
+<!--    <stroke-->
+<!--        android:width="3dp"-->
+<!--    android:color="?attr/colorPrimary" /> &lt;!&ndash; Set the border color &ndash;&gt;-->
+<!--</shape>-->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_focused="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorOnSecondary"/>
+            <corners android:radius="30dp"/>
+            <stroke android:width="2dp" android:color="?attr/colorPrimary"/>
+        </shape>
+    </item>
+
+    <item android:state_enabled="true">
+        <shape android:shape="rectangle">
+            <solid android:color="?attr/colorOnSecondary"/>
+            <corners android:radius="30dp"/>
+            <stroke android:width="2dp" android:color="?attr/colorPrimary"/>
+        </shape>
+    </item>
+</selector>

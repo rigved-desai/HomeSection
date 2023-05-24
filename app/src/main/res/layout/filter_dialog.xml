@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/dialog_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_corners"
+    android:padding="20dp">
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/filters_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/location_tag"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/filters_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_marginTop="15dp"
+        android:textColor="?attr/colorOnPrimary"/>
+
+    <EditText
+        android:textSize="15sp"
+        android:id="@+id/location_inp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/form_input_bg"
+        android:drawableEnd="@drawable/ic_location"
+        android:drawableTint="?attr/itemFillColor"
+        android:maxHeight="50dp"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_tag" />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/gender_tag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/location_inp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:layout_marginTop="10dp"
+        android:textColor="?attr/colorOnPrimary"/>
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gender_tag"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/male_btn"
+            android:layout_width="wrap_content"
+            android:button="@null"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_radio_btn"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Male"
+            android:textColor="?attr/colorPrimary"/>
+
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/female_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_radio_btn"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Female"
+            android:textColor="?attr/colorPrimary"/>
+        <RadioButton
+            android:button="@null"
+            android:id="@+id/others_btn"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_radio_btn"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
+            android:text="Others"
+            android:textColor="?attr/colorPrimary"/>
+    </RadioGroup>
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/age_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gender_group"
+        android:textColor="?attr/colorOnPrimary"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.slider.RangeSlider
+        android:valueFrom="18"
+        android:id="@+id/age_slider"
+        style="@style/ageRangeSliderStyle"
+        android:layout_marginTop="10dp"
+        android:valueTo="100"
+        android:stepSize="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/age_tag"/>
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/age_slider"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/divider"
+        app:tint="?attr/dividerColor"
+        android:id="@+id/divider"
+        >
+    </ImageView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:gravity="center"
+        >
+<!--        Check if buttons need shadow or not-->
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:backgroundTintMode="add"
+        android:background="@drawable/custom_btn"
+        android:textColor="@drawable/btn_text_color"
+        android:paddingHorizontal="45dp"
+        android:id="@+id/reset_btn"
+        android:text="Reset"
+        android:letterSpacing="0.0"
+        android:outlineSpotShadowColor="@android:color/transparent"
+        />
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAllCaps="false"
+            android:text="Apply Filter"
+            android:paddingHorizontal="65dp"
+            android:id="@+id/apply_btn"
+            app:backgroundTint="@null"
+            app:backgroundTintMode="add"
+            android:background="@drawable/custom_btn_2"
+            android:textColor="@drawable/btn_text_color_2"
+            android:letterSpacing="0.0"
+            android:outlineSpotShadowColor="@android:color/transparent"/>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
