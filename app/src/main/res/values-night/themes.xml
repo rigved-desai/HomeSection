@@ -9,6 +9,7 @@
         <item name="colorOnSecondary">#1D1F26</item>
         <item name="dividerColor">#2A2B39</item>
         <item name="itemFillColor">#CCCCCC</item>
+        <item name="colorTertiary">@color/black</item>
         <!-- Status bar color. -->
         <!-- Customize your theme here. -->
         <item name="android:textColorPrimary">@color/white</item>

@@ -7,8 +7,10 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/pink</item>
         <item name="colorOnSecondary">@color/white</item>
+        <item name="colorTertiary">@color/white</item>
         <item name="dividerColor">#CCCCCC</item>
         <item name="itemFillColor">#CCCCCC</item>
+
         <!-- Status bar color. -->
         <!--        <item name="android:statusBarColor">?attr/colorPrimary</item>-->
         <!-- Customize your theme here. -->
@@ -16,7 +18,13 @@
         <item name="android:textColorSecondary">@color/white</item>
         <item name="android:textColorPrimaryDisableOnly">#CCCCCC</item>
 
+        <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
+
+
     </style>
+
+
+
 
     <style name="Theme.HomeScreen.NoActionBar">
         <item name="windowActionBar">false</item>
@@ -45,11 +53,11 @@
 
     </style>
 
-
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in</item>
         <item name="android:windowExitAnimation">@anim/slide_out</item>
     </style>
+
 
 
 </resources>

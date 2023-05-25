@@ -12,6 +12,7 @@ import android.widget.FrameLayout
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.AppCompatButton
 import com.google.android.material.slider.RangeSlider
 
 class MainActivity : AppCompatActivity() {
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val filtersBtn : FrameLayout = findViewById(R.id.set_filter)
+        val filtersBtn : Button = findViewById(R.id.set_filter)
         filtersBtn.setOnClickListener {
             showFiltersDialog();
         }
