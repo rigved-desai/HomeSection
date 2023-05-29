@@ -1,5 +1,5 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Button not pressed state -->
+
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
             <!-- Background color when not pressed -->
@@ -12,16 +12,13 @@
             <corners android:radius="30dp" />
         </shape>
     </item>
-    <!-- Button pressed state -->
+
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
-            <!-- Background color when pressed -->
             <solid android:color="?attr/colorOnSecondary" />
-            <!-- Stroke color when pressed -->
             <stroke
                 android:width="2dp"
                 android:color="?attr/colorPrimary" />
-            <!-- Corner radius -->
             <corners android:radius="30dp" />
         </shape>
     </item>
