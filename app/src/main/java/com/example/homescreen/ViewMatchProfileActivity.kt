@@ -9,6 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.view.ContextThemeWrapper
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.marginTop
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -36,7 +37,7 @@ class ViewMatchProfileActivity : AppCompatActivity() {
         val bottomSheetLayout = findViewById<ConstraintLayout>(R.id.profile_sheet)
         val bottomSheetBehavior = BottomSheetBehavior.from(bottomSheetLayout)
 
-        bottomSheetBehavior.peekHeight = 100
+        bottomSheetBehavior.peekHeight = 200
         bottomSheetBehavior.maxHeight = ViewGroup.LayoutParams.WRAP_CONTENT
         val interests : FlowLayout = findViewById(R.id.user_interests)
 

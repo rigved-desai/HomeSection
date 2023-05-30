@@ -34,9 +34,30 @@ class MainActivity : AppCompatActivity(), CardClickListener{
         // Implement getData() from database later, using faux data only for representation for now
         val profiles = ArrayList<UserModel>()
 //        profiles = getData()
-        profiles.add(UserModel("User 1", 25, 4.0, "Model", R.drawable.user_1, "I am Lorem Ipsum", arrayListOf("Singing", "Dancing", "Coding", "Painting", "Hiking", "Cafe-hopping")))
-        profiles.add(UserModel("User 2", 23, 2.0, "Singer", R.drawable.user_2,"I am Lorem Ipsum", arrayListOf("Singing", "Dancing")))
-        profiles.add(UserModel("User 3", 28, 3.3, "Model", R.drawable.user_1, "I am Lorem Ipsum", arrayListOf("Singing", "Dancing")))
+        profiles.add(
+            UserModel("User 1",
+            25,
+            4.0,
+            "Model",
+            R.drawable.user_1,
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            arrayListOf("Fashion", "Music", "Painting", "Food and Drink", "Hiking", "Travel and Places")))
+        profiles.add(
+            UserModel("User 2",
+            23,
+                2.0,
+            "Singer",
+            R.drawable.user_2,
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            arrayListOf("Singing", "Dancing")))
+        profiles.add(
+            UserModel("User 3",
+                28,
+                3.3,
+                "Model",
+                R.drawable.user_1,
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+                arrayListOf("Singing", "Dancing")))
         setUpMatchStack(profiles)
         setUpMatchBtns()
 
