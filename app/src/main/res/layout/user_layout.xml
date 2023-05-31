@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/user_card"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="16dp"
     android:backgroundTint="?attr/colorOnSecondary"
-    app:cardCornerRadius="40dp"
-    android:id="@+id/user_card">
+    app:cardCornerRadius="40dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:drawablePadding="5dp"
             android:paddingHorizontal="20dp"
             android:paddingVertical="10dp"
-            android:text="X miles"
+            android:text="@string/holder_string"
             android:textSize="16sp"
             app:drawableLeftCompat="@drawable/ic_distance"
             app:drawableTint="?attr/colorPrimary"
@@ -44,7 +44,7 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/gradient"/>
+            android:src="@drawable/gradient" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -55,38 +55,29 @@
             app:layout_constraintStart_toStartOf="parent">
 
             <TextView
-                android:id="@+id/user_name"
+                android:id="@+id/user_name_age"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginBottom="70dp"
-                android:text="User Name,"
+                android:maxWidth="300dp"
+                android:text="@string/holder_string"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
-            <TextView
-                android:id="@+id/user_age"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="XY"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-                app:layout_constraintStart_toEndOf="@id/user_name"
-                app:layout_constraintTop_toTopOf="@id/user_name" />
 
             <TextView
                 android:id="@+id/user_occupation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:text="User Occupation"
+                android:text="@string/holder_string"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                app:layout_constraintStart_toStartOf="@id/user_name"
-                app:layout_constraintTop_toBottomOf="@+id/user_name" />
+                app:layout_constraintStart_toStartOf="@id/user_name_age"
+                app:layout_constraintTop_toBottomOf="@+id/user_name_age" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 

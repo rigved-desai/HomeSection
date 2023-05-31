@@ -22,8 +22,7 @@ class MatchAdapter(private  val profileList : ArrayList<UserModel>, private val 
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        private val userName : TextView = itemView.findViewById(R.id.user_name)
-        private val userAge: TextView = itemView.findViewById(R.id.user_age)
+        private val userNameAge : TextView = itemView.findViewById(R.id.user_name_age)
         private val userDistance : TextView = itemView.findViewById(R.id.user_dist)
         private val userImage: ImageView = itemView.findViewById(R.id.user_image)
         private val userOccupation : TextView = itemView.findViewById(R.id.user_occupation)
@@ -37,8 +36,7 @@ class MatchAdapter(private  val profileList : ArrayList<UserModel>, private val 
             }
         }
         fun bindData(profile: UserModel) {
-            userName.text = "${profile.name},"
-            userAge.text = profile.age.toString()
+            userNameAge.text = "${profile.name}, ${profile.age.toString()}"
             userDistance.text = "${profile.distance.toString()} miles"
             userOccupation.text = profile.occupation
             userImage.setImageResource(profile.image)

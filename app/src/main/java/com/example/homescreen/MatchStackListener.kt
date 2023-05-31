@@ -11,7 +11,7 @@ class MatchStackListener(private val context: Context) : CardStackListener {
 
     override fun onCardSwiped(direction: Direction?) {
 
-        //Replace the toasts with update data
+        //Replace the toasts with function which updates swipe list of user
 
         if(direction == Direction.Left) Toast.makeText(context , "Swiped Left", Toast.LENGTH_SHORT).show()
         else  Toast.makeText(context , "Swiped Right", Toast.LENGTH_SHORT).show()

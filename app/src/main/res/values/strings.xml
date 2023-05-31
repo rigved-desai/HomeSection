@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Kencan</string>
+    <string name="holder_string">Lorem Ipsum</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>

@@ -1,4 +1,6 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="?attr/colorTertiary" />
-    <corners android:topRightRadius="15dp" android:topLeftRadius="15dp"/>
+    <corners
+        android:topLeftRadius="15dp"
+        android:topRightRadius="15dp" />
 </shape>

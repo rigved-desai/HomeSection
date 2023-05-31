@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ViewMatchProfileActivity">
 
+
     <ImageView
+        android:id="@+id/profile_image"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/user_1" />
@@ -28,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="User Name, "
+                android:text="@string/holder_string"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="XY"
+                android:text="@string/holder_string"
                 android:textSize="26sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@id/profile_name"
@@ -50,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="20dp"
-                android:text="Occupation"
+                android:text="@string/holder_string"
                 android:textSize="22dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/profile_name" />
@@ -59,7 +61,7 @@
                 android:id="@+id/about_tag"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="About"
+                android:text="@string/holder_string"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -67,12 +69,12 @@
 
             <TextView
 
-                android:textSize="16sp"
                 android:id="@+id/profile_about"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="20dp"
-                android:text="Lorem ipsum blah blah"
+                android:text="@string/holder_string"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/about_tag" />
 
@@ -81,11 +83,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp"
-                android:text="Interests"
+                android:text="@string/holder_string"
                 android:textSize="22sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/profile_about" />
+
+            <!--  Comment below FlowLayout to render rest of the layout-->
 
             <com.nex3z.flowlayout.FlowLayout
                 android:id="@+id/user_interests"

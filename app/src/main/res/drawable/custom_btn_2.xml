@@ -5,9 +5,7 @@
             <!-- Background color when not pressed -->
             <solid android:color="?attr/colorPrimary" />
             <!-- Stroke color when not pressed -->
-            <stroke
-                android:width="2dp"
-                android:color="?attr/colorPrimary" />
+            <stroke android:width="2dp" android:color="?attr/colorPrimary" />
             <!-- Corner radius -->
             <corners android:radius="30dp" />
         </shape>
@@ -16,9 +14,7 @@
     <item android:state_pressed="true">
         <shape android:shape="rectangle">
             <solid android:color="?attr/colorOnSecondary" />
-            <stroke
-                android:width="2dp"
-                android:color="?attr/colorPrimary" />
+            <stroke android:width="2dp" android:color="?attr/colorPrimary" />
             <corners android:radius="30dp" />
         </shape>
     </item>
